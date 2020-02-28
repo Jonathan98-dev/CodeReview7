@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "codereview7": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "codereview7"
+    }
+  },
+  "defaultProject": "codereview7",
+  "cli": {
+    "analytics": "04e1e9e6-5082-42bc-939a-6b31e0018226"
+  }
 }
