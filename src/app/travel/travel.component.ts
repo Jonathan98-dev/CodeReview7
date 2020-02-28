@@ -8,11 +8,19 @@ import { travels } from './travels'
 })
 export class TravelComponent implements OnInit {
 	travels=travels;
-
+	
 	description:boolean = false;
 
-	constructor() { }
+	constructor(private cartService:CartService) { }
 	
+
+	addToCart(product)
+	{
+		window.alert("Added to Cart");
+		this.cartService.addToCart(product);
+	}
+
+
 	descshow()
 	{
 		
