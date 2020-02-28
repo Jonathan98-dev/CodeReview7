@@ -5,8 +5,9 @@ body
 {
 	background: url("../../assets/img/background.jpg") no-repeat center center;
 	background-size: cover;
+	filter: grayscale(10%);
 	height: 65vh;
-	border-bottom: 2px solid rgba(0,0,0,0.3);
+	
 }
 
 .container
@@ -15,11 +16,12 @@ body
 	.navtext
 	{
 		display: flex;
+
 		.navside
 		{
 			display: flex;
 			justify-content: center;
-			background-color: $navbg;
+			
 			
 			height: 52vh;
 			width:50%;
@@ -32,6 +34,9 @@ body
 				flex-direction: column;
 				margin:10%;
 				width: 60%;
+				text-shadow: 0.5px 0.5px 20px black;
+				transition: 0.3s;
+				&:hover{transform: scale(1.05);}
 
 				#normaltext
 				{
@@ -52,6 +57,7 @@ body
 					width: 60%;
 					background-color:transparent;
 					color: $white;
+					text-shadow: 0.5px 0.5px 20px black;
 					padding:5%;
 					border:none;
 					border-left: 1px solid;

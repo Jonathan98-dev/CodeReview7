@@ -1,0 +1,71 @@
+body
+{
+	
+}
+
+.container
+{
+	display:flex;
+	margin: 5% auto;
+	width:90%;
+	max-height: 50vh;
+
+	.leftside, .rightside
+	{
+		width:50%;
+		overflow: scroll;
+		padding:2%;
+	}
+	
+	.leftside
+	{
+		
+		#headingservice
+		{
+			font-size: 1.5em;
+			font-weight: 300;
+		}
+
+		nav
+		{
+			margin-top: 2%;
+			margin-bottom: 5%;
+			ul 
+			{
+			display: flex;
+			justify-content: space-around;
+			list-style-type: none;
+
+				li
+				{
+					padding-left:1%;
+					transition: 0.3s;
+					&:hover{border-left: 3px solid indianred;}
+				}
+
+				}
+				a
+				{
+					text-decoration: none;
+					color: grey;
+					&:hover{color:black;}
+				}	
+		}
+	}
+
+	.leftside::-webkit-scrollbar
+	{
+		display:none;
+	}
+	.rightside
+	{
+		background: url(../../assets/img/insurance.jpg) no-repeat center center;
+		background-size: contain;
+	}
+	.rightside::-webkit-scrollbar
+	{
+		display:none;
+	}
+
+}
+

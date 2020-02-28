@@ -1,0 +1,53 @@
+body
+{
+
+}
+
+.container
+{
+	width:90%;
+	
+	margin: 5% auto;
+	padding: 2%;
+	box-shadow: 2px 2px 5px grey;
+
+	.blogheader
+	{
+		font-size: 1.8em;
+		font-style: italic;
+		margin-bottom: 3%;
+
+		p
+		{
+			border-left: 2px solid #54979D;
+			padding-left: 2%;
+		}
+	}
+
+	.blogtext
+	{
+		font-size: 1em;
+		font-style: italic;
+
+		.blogtextheading
+		{
+			font-size: 1.3em;
+			font-weight: bold;
+			font-style: normal;
+			margin-bottom: 1.5%;
+		}
+
+		.textcont
+		{
+			margin-bottom: 1.5%;
+		}
+
+		hr
+		{
+			margin: 2% 0%;
+		}
+	}
+
+
+}
+
