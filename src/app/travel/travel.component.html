@@ -1,1 +1,36 @@
-<p>travel works!</p>
+<body>
+	<div class = "containertrav">
+		
+		<div class = traveloffer *ngFor="let travel of travels, index as travelId">
+			<div class = "innercontainer">
+				<img class = "destimg" src="../../assets/img/background.jpg" alt="img">
+				<div class = "nameanddesc">
+					<p class = "destname">{{ travel.destination }}</p>
+					<a [routerLink] = "['/travels',travelId]"><button class = "descbutton" ><img src="../../assets/img/desc.png" alt=""></button></a>
+				</div>
+				<div class = "dates">
+					<p class = "destdate">{{ travel.date1 }}</p>
+					<p class = "destdate">{{ travel.date2 }}</p>
+				</div>		
+				<div class = "priceandduration">					
+					<p class = "destprice">{{ travel.price }}€</p>
+					<p class = "destduration">{{ travel.duration }} nights</p>
+				</div>
+
+				<button class = "addbutton">Book now</button>
+
+<!-- does not work as intended yet(shows all descriptions) -->
+				<!-- <div 
+				class = "description">
+<hr>
+					<p class = "descheading">Description:</p>
+
+					<p class = "desctext">{{ travel.description }}</p>
+
+				</div> -->
+			</div>
+
+		</div>
+
+	</div>
+</body>
