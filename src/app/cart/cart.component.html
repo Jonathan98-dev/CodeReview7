@@ -1,7 +1,31 @@
 
-<h3>Cart</h3>
+<h3>Your Cart</h3>
 
-<div class="cart-item" *ngFor="let item of items">
- <span>{{ item.destination }} </span>
- <span>{{ item.price | currency }}</span>
-</div>
+
+
+<body>
+	<div class = "containertrav" >
+		
+		<div class = traveloffer *ngFor="let item of items">
+			<div class = "innercontainer">
+				<img class = "destimg" src="../../assets/img/background.jpg" alt="img">
+				<div class = "nameanddesc">
+					<p class = "destname">{{ item.destination }}</p>
+					<a><button class = "descbutton" ><img src="../../assets/img/desc.png" alt=""></button></a>
+				</div>
+				<div class = "dates">
+					<p class = "destdate">{{ item.date1 }}</p>
+					<p class = "destdate">{{ item.date2 }}</p>
+				</div>		
+				<div class = "priceandduration">					
+					<p class = "destprice">{{ item.price }}€</p>
+					<p class = "destduration">{{ item.duration }} nights</p>
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
